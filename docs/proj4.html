@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Project 4 - Who is likely to Default? | Hands on Data Science w. Python</title>
+  <meta name="description" content="Hands on Data Science with Python WFU Summer 2020" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Project 4 - Who is likely to Default? | Hands on Data Science w. Python" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Hands on Data Science with Python WFU Summer 2020" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Project 4 - Who is likely to Default? | Hands on Data Science w. Python" />
+  
+  <meta name="twitter:description" content="Hands on Data Science with Python WFU Summer 2020" />
+  
+
+<meta name="author" content="Michael Ames | amesam@wfu.edu" />
+
+
+<meta name="date" content="2020-05-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="assignment4.html"/>
+<link rel="next" href="proj5.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#about"><i class="fa fa-check"></i>About this course</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#download"><i class="fa fa-check"></i>Download and Install Python</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#firstnb"><i class="fa fa-check"></i>Your First Notebook</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="assignment1.html"><a href="assignment1.html"><i class="fa fa-check"></i>Assignment 1 - Panda’s Tutorial 101</a></li>
+<li class="chapter" data-level="" data-path="proj1.html"><a href="proj1.html"><i class="fa fa-check"></i>Project 1 - Who is Likely to Churn?</a><ul>
+<li class="chapter" data-level="" data-path="proj1.html"><a href="proj1.html#over1"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="proj1.html"><a href="proj1.html#goals1"><i class="fa fa-check"></i>This Week’s Goals</a></li>
+<li class="chapter" data-level="" data-path="proj1.html"><a href="proj1.html#task_1"><i class="fa fa-check"></i>Tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="assignment2.html"><a href="assignment2.html"><i class="fa fa-check"></i>Assignment 2 - Panda’s Tutorial 201</a></li>
+<li class="chapter" data-level="" data-path="proj2.html"><a href="proj2.html"><i class="fa fa-check"></i>Project 2 - Who is Likely to Churn? Part II</a><ul>
+<li class="chapter" data-level="" data-path="proj2.html"><a href="proj2.html#over2"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="proj2.html"><a href="proj2.html#goals2"><i class="fa fa-check"></i>This Week’s Goals</a></li>
+<li class="chapter" data-level="" data-path="proj2.html"><a href="proj2.html#task_2"><i class="fa fa-check"></i>Tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="assignment3.html"><a href="assignment3.html"><i class="fa fa-check"></i>Assignment 3 - Matplotlib 101</a></li>
+<li class="chapter" data-level="" data-path="proj3.html"><a href="proj3.html"><i class="fa fa-check"></i>Project 3 - Who is Likely to Respond?</a><ul>
+<li class="chapter" data-level="" data-path="proj3.html"><a href="proj3.html#over3"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="proj3.html"><a href="proj3.html#goals3"><i class="fa fa-check"></i>This Week’s Goals</a></li>
+<li class="chapter" data-level="" data-path="proj3.html"><a href="proj3.html#task_3"><i class="fa fa-check"></i>Tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="assignment4.html"><a href="assignment4.html"><i class="fa fa-check"></i>Assignment 4 - Data Profiling</a></li>
+<li class="chapter" data-level="" data-path="proj4.html"><a href="proj4.html"><i class="fa fa-check"></i>Project 4 - Who is likely to Default?</a><ul>
+<li class="chapter" data-level="" data-path="proj4.html"><a href="proj4.html#over4"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="proj4.html"><a href="proj4.html#goals4"><i class="fa fa-check"></i>This Week’s Goals</a></li>
+<li class="chapter" data-level="" data-path="proj4.html"><a href="proj4.html#task_4"><i class="fa fa-check"></i>Tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="proj5.html"><a href="proj5.html"><i class="fa fa-check"></i>Project 5 - Who is commint Fraud I?</a><ul>
+<li class="chapter" data-level="" data-path="proj5.html"><a href="proj5.html#over5"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="proj5.html"><a href="proj5.html#goals5"><i class="fa fa-check"></i>This Week’s Goals</a></li>
+<li class="chapter" data-level="" data-path="proj5.html"><a href="proj5.html#task_5"><i class="fa fa-check"></i>Tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="proj6.html"><a href="proj6.html"><i class="fa fa-check"></i>Final Exam - Who is commint Fraud II?</a><ul>
+<li class="chapter" data-level="" data-path="proj6.html"><a href="proj6.html#over6"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="proj6.html"><a href="proj6.html#goals6"><i class="fa fa-check"></i>This Week’s Goals</a></li>
+<li class="chapter" data-level="" data-path="proj6.html"><a href="proj6.html#task_6"><i class="fa fa-check"></i>Tasks</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Hands on Data Science w. Python</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="proj4" class="section level1 unnumbered">
+<h1>Project 4 - Who is likely to Default?</h1>
+<div id="over4" class="section level2 unnumbered">
+<h2>Overview</h2>
+<p>The bosses were excited about your promotion model, but now they have a whole lot of new loans comming through. Can you identify which of these new loans are likely to default? Promotions are expensive so you can’t blast everyone. The bank took a random sample of customers and run a randomized experiment to see who is likely to respond to new promotions. Your task is to use that data to predict which customers are most likely to respond to the promotion, you’ll also need to determine the % of likely responses to maximize profits.</p>
+</div>
+<div id="goals4" class="section level2 unnumbered">
+<h2>This Week’s Goals</h2>
+<ul>
+<li>Gradient Boosting Machines (GBM) &amp; NNets</li>
+<li>Evaluation Metrics
+<ul>
+<li>Variable Importance</li>
+<li>Operating a Score Thresholds – TPR/FPR/Threshold</li>
+</ul></li>
+<li>Compare a Forests vs. GBM vs NNet</li>
+</ul>
+</div>
+<div id="task_4" class="section level2 unnumbered">
+<h2>Tasks</h2>
+<ol style="list-style-type: decimal">
+<li><strong>Follow instructions found in project_4.ipynb</strong><br />
+</li>
+</ol>
+<ul>
+<li>Name it project_3_yourname.ipynb<br />
+</li>
+<li>Your first cell should be a Markdown cell and containing
+<ul>
+<li>Title<br />
+</li>
+<li>Your Name<br />
+</li>
+<li>Your Email<br />
+</li>
+<li>Date<br />
+</li>
+</ul></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Assets</li>
+</ol>
+<ul>
+<li>Dataset: promotions.csv<br />
+</li>
+<li>Notebook: project_3.ipynb</li>
+</ul>
+<p><strong>Turn In: </strong> project_3_yourname.html – following the template, <strong>note</strong> the executive summary needs to be written in a Markdown cell. In addition to standard details about your model, you’ll need to create some analysis on profit.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="assignment4.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="proj5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
